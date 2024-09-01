@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Login Form</title>
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="login_box">
+      <div class="login-header">
+        <span>Login</span>
+      </div>
+
+      <div class="input_box">
+        <label for="user" class="label">Username</label>
+        <input type="text" id="user" class="input-field" required>
+        <i class="bx bx-user icon"></i>
+      </div>
+
+      <div class="input_box">
+        <label for="pass" class="label">Password</label>
+        <input type="password" id="pass" class="input-field" required>
+        <i class="bx bx-lock-alt icon"></i>
+      </div>
+
+      <div class="remember-forgot">
+        <div class="remember-me">
+          <input type="checkbox" id="remember">
+          <label for="remember">Remember me</label>
+        </div>
+        <div class="forgot">
+          <a href="#">Forgot password?</a>
+        </div>
+      </div>
+
+      <!-- Updated Button -->
+      <div class="input_box">
+        <button class="cssbuttons-io-button">
+          Login
+          <div class="icon">
+            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 0h24v24H0z" fill="none"></path>
+              <path
+                d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                fill="currentColor"></path>
+            </svg>
+          </div>
+        </button>
+      </div>
+
+      <div class="register">
+        <span>Don't have an account? <a href="#">Register</a></span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

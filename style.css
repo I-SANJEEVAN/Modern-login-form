@@ -1,0 +1,214 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  min-height: 100vh;
+  background: url('download-6-scaled.jpg') no-repeat center center/cover;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login_box {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  position: relative;
+}
+
+.login-header {
+  margin-bottom: 20px; /* Adjusted space below */
+  text-align: center;
+}
+
+.login-header span {
+  font-size: 24px; /* Font size for header */
+  font-weight: 600;
+  color: #000000; /* Text color for header */
+}
+
+.input_box {
+  position: relative;
+  margin-bottom: 25px; /* Increased margin for space below fields */
+  width: 100%;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px; /* Adjusted padding */
+  background: transparent; /* Removed background */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Light border */
+  border-radius: 5px;
+  color: #000000; /* Changed text color to black */
+  font-size: 14px; /* Reduced font size */
+}
+
+.input-field:focus {
+  border-color: #a370f0;
+  outline: none;
+}
+
+.label {
+  position: absolute;
+  top: -20px; /* Adjusted top to align above the input field */
+  left: 10px;
+  color: #a370f0; /* Purple color */
+  font-size: 12px; /* Smaller font size */
+  pointer-events: none;
+  background: transparent; /* Removed background */
+  padding: 0 5px; /* Padding around label */
+  transition: all 0.3s;
+}
+
+.input-field:focus + .label,
+.input-field:not(:placeholder-shown) + .label {
+  top: -20px; /* Keep label above the input when focused */
+  left: 10px;
+  font-size: 12px; /* Smaller font size when focused */
+}
+
+.icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(0, 0, 0, 0.6); /* Changed icon color to dark */
+  font-size: 16px; /* Adjusted size */
+}
+
+.remember-forgot {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px; /* Increased space */
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Increased space */
+}
+
+.remember-me input {
+  margin-right: 10px;
+  cursor: pointer; /* Hand cursor for checkbox */
+}
+
+.remember-me label {
+  color: rgba(0, 0, 0, 0.8); /* Changed label color to black */
+}
+
+.forgot {
+  text-align: right; /* Aligned to the right */
+  margin-top: 10px; /* Adjusted space */
+}
+
+.forgot a {
+  color: rgba(0, 0, 0, 0.8); /* Changed link color to black */
+  text-decoration: none;
+  font-size: 14px; /* Reduced font size */
+}
+
+.forgot a:hover {
+  text-decoration: underline;
+}
+
+.cssbuttons-io-button {
+  background: #000000; /* Black background */
+  color: white; /* White text */
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 15px; /* Reduced font size */
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #714da6;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px; /* Added space above the button */
+}
+
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+  position: absolute;
+  right: 0.3em;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  fill: #000000; /* Ensure the arrow color is black */
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.3em); /* Adjust this for alignment */
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
+
+.cssbuttons-io-button:hover {
+  background: #333333; /* Darker black on hover */
+  box-shadow: inset 0 0 1.6em -0.6em #333333; /* Matching shadow color */
+  color: white; /* Ensure text remains white */
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.register {
+  text-align: center;
+  margin-top: 20px;
+  background: #000000; /* Black background */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.register span {
+  color: #a370f0; /* Purple text */
+  font-size: 14px; /* Reduced font size */
+}
+
+.register a {
+  color: #a370f0;
+  text-decoration: none;
+}
+
+.register a:hover {
+  text-decoration: underline;
+}
